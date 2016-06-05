@@ -1,0 +1,64 @@
+/*
+* CSS class for styling the html webpage.
+*/
+
+.body_style{
+     text-align: center;
+}
+
+.header {
+    color: #545454;
+    font-style: italic;
+}
+
+.numbers {
+    background: #FCFCFC; 
+    border: 1px double #B0B0B0; 
+    border-radius: 7px; 
+    box-shadow: 0 0 3px #333; 
+    color: #666; 
+    outline: none; 
+    height:28px; 
+    width: 150px;
+
+} 
+
+.operator {
+    background: #FCFCFC; 
+    border: 1px double #DDD; 
+    border-radius: 7px; 
+    box-shadow: 0 0 3px #333; 
+    color: #666; 
+    outline: none; 
+    height:25px; 
+    width: 50px;
+    text-align: center;
+}
+
+.calculate_button {
+    background: #858585;
+    background-image: -webkit-linear-gradient(top, #858585, #E5E5E5);
+    background-image: -moz-linear-gradient(top, #858585, #E5E5E5);
+    background-image: -ms-linear-gradient(top, #858585, #E5E5E5);
+    background-image: -o-linear-gradient(top, #858585, #E5E5E5);
+    background-image: linear-gradient(to bottom, #858585, #E5E5E5);
+    -webkit-border-radius: 13px;
+    -moz-border-radius: 13px;
+    border-radius: 13px;
+    text-shadow: 1px 1px 26px #666666;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 15px 10px 15px;
+    border: solid #AFAFAF 2px;
+    text-decoration: none;
+}
+.calculate_button:hover {
+    background: #E5E5E5;
+    background-image: -webkit-linear-gradient(top, #E5E5E5, #858585);
+    background-image: -moz-linear-gradient(top, #E5E5E5, #858585);
+    background-image: -ms-linear-gradient(top, #E5E5E5, #858585);
+    background-image: -o-linear-gradient(top, #E5E5E5, #858585);
+    background-image: linear-gradient(to bottom, #E5E5E5, #858585);
+    text-decoration: none;
+}
