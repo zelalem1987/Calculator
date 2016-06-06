@@ -6,7 +6,7 @@
         <title>
             Basic Calculator
         </title>
-        <script type="text/javascript" src="numbersOnly.js"></script>
+        <script type="text/javascript" src="restriction.js"></script>
     </head>
     <div class="body_style">
         <img src='background_image3.jpg' 
@@ -16,13 +16,13 @@
             <form method="post" action="index.php">
 
                 <div><input type="text" class="numbers" name="firstNumber" id="firstNumber" 
-                            placeholder="First Number" onkeypress="return isNumberKey(event)"></div>
+                            placeholder="First Number" onkeypress = "return numericOnly(this);"></div>
                 <br>
-                <div><input type="text" class="operator" name="operator" id="operator" 
-                            placeholder="+ - * /"></div>
+                <div><input type="text" class="operator" name="operator" id="operator" MaxLength="1"
+                            placeholder="+ - * /" onkeypress="return OperatorOnly(event)"></div>
                 <br>
                 <div><input type="text" class="numbers" name="secondNumber"id="secondNumber" 
-                            placeholder="Second Number" onkeypress="return isNumberKey(event)"></div>
+                            placeholder="Second Number" onkeypress = "return numericOnly(this);"></div>
                 <br><br>
                 <div><input type="submit" class="calculate_button" name="submit" value="Calculate"></div>
             </form> 
@@ -30,13 +30,14 @@
             <?php
             require 'Calculator.php';
 
-//Takes two number inputs and the operator
+//Takes two number inputs and an operator
             $number1 = filter_input(INPUT_POST, 'firstNumber');
             $number2 = filter_input(INPUT_POST, 'secondNumber');
             $operator = filter_input(INPUT_POST, 'operator');
 
 //Create an instance from Calculator class:
             $calculator = new Calculator();
+
             if ($operator != NULL) {
                 $result_style = "<font size='5' face='Arial'font color='#545454'>";
                 echo "<br>" . "$result_style" . "<i>" . "<b>";
@@ -57,11 +58,9 @@
                             echo "$number1" . " " . "/" . " " . "$number2" . " " . "=" . " "
                             . $calculator->divide($number1, $number2);
                         }
-                    } else {
-                        echo "Invalid operator, please use +, -, * or / only! ";
                     }
                 } else {
-                    echo "Please give the numbers!";
+                    echo "Please enter both numbers!";
                 }
             }
             ?>

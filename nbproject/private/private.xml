@@ -3,11 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/Test/index.php</file>
-            <file>file:/C:/xampp/htdocs/Test/display.css</file>
-            <file>file:/C:/xampp/htdocs/Test/Calculator.php</file>
-            <file>file:/C:/xampp/htdocs/Test/numbersOnly.js</file>
-            <file>file:/C:/xampp/htdocs/Test/CalculatorTest.php</file>
+            <file>file:/C:/xampp/htdocs/Calculator/index.php</file>
+            <file>file:/C:/xampp/htdocs/Calculator/numbersOnly.js</file>
+            <file>file:/C:/xampp/htdocs/Calculator/display.css</file>
+            <file>file:/C:/xampp/htdocs/Calculator/Calculator.php</file>
         </group>
     </open-files>
 </project-private>
